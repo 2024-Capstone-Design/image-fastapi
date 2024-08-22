@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# 환경 변수 파일
+.env
+
+# tar files
+*.tar
+*.tar.gz
+*.tgz
+
+# 특정 파일 이름의 tar 파일
+filename.tar
+
+# 특정 파일 경로의 tar 파일
+/path/to/filename.tar

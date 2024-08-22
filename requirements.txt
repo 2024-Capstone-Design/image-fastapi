@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+requests
+pillow
+firebase-admin
+protobuf==3.19.6
+google-cloud-storage==2.14.0
+google-api-python-client==2.137.0
+gunicorn
+opencv-python
+numpy
