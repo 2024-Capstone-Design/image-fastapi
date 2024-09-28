@@ -12,6 +12,10 @@ async def process_images(request: ImageRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/health-check/")
+async def health_check():
+    return {"status": "ok"}
+    
 # FastAPI 서버 실행
 if __name__ == "__main__":
     import uvicorn

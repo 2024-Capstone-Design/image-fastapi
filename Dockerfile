@@ -14,6 +14,9 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt requirements.txt
 COPY . .
 
+# .env 파일을 환경 변수로 읽어들이기 위해 python-dotenv 패키지 추가
+RUN pip install python-dotenv
+
 # 필요한 Python 패키지 설치
 RUN pip install --no-cache-dir -r requirements.txt
 

@@ -1,10 +1,11 @@
 from pydantic import BaseModel
 from typing import List
 
-class Character(BaseModel):
+class ImageRequestItem(BaseModel):
     name: str
     imageUrl: str
+    promptType: str
 
 class ImageRequest(BaseModel):
     studentTaskId: int
-    characters: List[Character]
+    imageRequest: List[ImageRequestItem]
